@@ -5,35 +5,35 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.perkin.dev.domain.Order;
 import com.perkin.dev.repo.OrderRepo;
 
 @Service
-public class OrderService implements DbService {
+public class OrderService implements DbService<Order> {
 	@Autowired
 	private OrderRepo repo;
 	
 	@Override
-	public List findAll() {
-		// TODO Auto-generated method stub
-		return null;
+	public List<Order> findAll() {
+		var result = repo.findAll();
+		return (List<Order>) result;
 	}
 
 	@Override
-	public Boolean addItem(Object value) {
-		// TODO Auto-generated method stub
-		return null;
+	public Boolean addItem(Order value) {
+		repo.save(value);
+		return true;
 	}
 
 	@Override
-	public Boolean removeItem(Object value) {
-		// TODO Auto-generated method stub
-		return null;
+	public Boolean removeItem(Order value) {
+		repo.delete(value);
+		return true;
 	}
 
 	@Override
-	public Boolean saveItem(Object value) {
-		// TODO Auto-generated method stub
-		return null;
+	public Boolean saveItem(Order value) {
+		repo.save(value);
+		return true;
 	}
-
 }
