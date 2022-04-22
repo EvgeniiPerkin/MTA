@@ -1,5 +1,7 @@
 package com.perkin.dev.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,6 +17,8 @@ public class HomeController {
 	
 	@GetMapping("/")
 	public String home(Model model) {
+		var orders = (List<Order>)service.findAll();
+		model.addAttribute("orders", orders);
 		return "home";
 	}
 }

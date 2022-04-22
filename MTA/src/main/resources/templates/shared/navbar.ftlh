@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">MTA</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,22 +16,22 @@
           <a class="nav-link" href="/car"">Cars</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/LoadingAddress"">Loading address</a>
+          <a class="nav-link" href="/LoadingAddress">Loading address</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/UnloadingAddress"">Unloading address</a>
+          <a class="nav-link" href="/UnloadingAddress">Unloading address</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/cargo"">Cargo</a>
+          <a class="nav-link" href="/cargo">Cargo</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/counterparty"">Counterparties</a>
+          <a class="nav-link" href="/counterparty">Counterparties</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/customer"">Customers</a>
+          <a class="nav-link" href="/customer">Customers</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/executor"">Executors</a>
+          <a class="nav-link" href="/executor">Executors</a>
         </li>
       </ul>
     </div>
