@@ -9,6 +9,11 @@ import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 import org.hibernate.validator.constraints.Length;
 
+/**
+ * сущность - заказ
+ * @author Perkin
+ *
+ */
 @Entity
 @Table(name = "t_order")
 public class Order {
