@@ -1,3 +1,5 @@
+<#import "login.ftlh" as l>
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">MTA</a>
@@ -32,7 +34,10 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/executor">Executors</a>
-        </li>
+        </li>        
+		<li class="nav-item">
+			<@l.logout/>
+		</li>
       </ul>
     </div>
   </div>

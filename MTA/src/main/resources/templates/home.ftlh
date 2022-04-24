@@ -1,17 +1,18 @@
 <#import "shared/common.ftlh" as c>
+<#import "shared/login.ftlh" as l>
 
 <@c.page>
 	<table class="table table-striped">
 	    <thead>
-	    <tr>
-	        <th>Номер заявки</th>
-	        <th>Дата</th>
-	        <th>Сумма</th>
-	        <th>Исполнитель</th>
-	        <th>Заказчик</th>
-	        <th>Изменить</th>
-	        <th>Удалить</th>
-	    </tr>
+		    <tr>
+		        <th>№ Заявки</th>
+		        <th>Дата</th>
+		        <th>Сумма</th>
+		        <th>Исполнитель</th>
+		        <th>Заказчик</th>
+		        <th>Изменить</th>
+		        <th>Удалить</th>
+		    </tr>
 	    </thead>
 	    <tbody>
 	    <#list orders as o>
