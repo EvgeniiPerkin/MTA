@@ -36,4 +36,44 @@ public class User {
     @CollectionTable(name = "е_user_role", joinColumns = @JoinColumn(name = "user_id"))
     @Enumerated(EnumType.STRING)
 	private Set<Role> roles;
+
+	public Long getUserId() {
+		return userId;
+	}
+
+	public void setUserId(Long userId) {
+		this.userId = userId;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public Boolean getActive() {
+		return active;
+	}
+
+	public void setActive(Boolean active) {
+		this.active = active;
+	}
+
+	public Set<Role> getRoles() {
+		return roles;
+	}
+
+	public void setRoles(Set<Role> roles) {
+		this.roles = roles;
+	}
 }
